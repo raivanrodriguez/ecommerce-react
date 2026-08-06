@@ -27,9 +27,9 @@ export const AppRoutes = () => {
   let routes = useRoutes([
     { path: '/', element: <Categories />  },
     { path: '/my-account', element: <MyAccount /> },
-    { path: 'categories/id', element: <InfoPro  /> },
-    { path: 'infopro', element:<InfoPro  />},
-    {path: 'products', element: <Products/>},
+    { path: '/categories/id', element: <InfoPro  /> },
+    { path: '/infopro', element:<InfoPro  />},
+    {path: '/products', element: <Products/>},
 
     //{ path: '/sign-in', element: <SignIn /> },
     {path: 'cart', element: <Cart/>}

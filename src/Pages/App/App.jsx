@@ -2,7 +2,7 @@
 
 import { AppProvider } from "../../Context";
 import Navbar from "../../Components/Navbar"
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
 
 
@@ -16,13 +16,13 @@ function App() {
     
   return (
     <AppProvider>
-      <BrowserRouter>
+      <HashRouter>
       <Navbar/>
         <AppRoutes />
         
         
         
-      </BrowserRouter>
+      </HashRouter>
       </AppProvider>
     
   )
