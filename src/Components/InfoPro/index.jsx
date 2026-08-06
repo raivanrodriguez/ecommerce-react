@@ -32,7 +32,7 @@ export default function InfoPro (){
                 className="h-full w-full object-cover object-center group-hover:opacity-75"
                 
               />
-              console.log(infop.image)
+             
                     
             </div>
                   
