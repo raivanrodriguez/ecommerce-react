@@ -26,12 +26,13 @@ export default function InfoPro (){
             <Navbaritem to="/products" onClick={() => context.setId(infop.id)}> 
             <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
               <img
-                src={infop.image}
+              
+                src={`${import.meta.env.BASE_URL}${infop.image}`}
                 
                 className="h-full w-full object-cover object-center group-hover:opacity-75"
                 
               />
-              
+              console.log(infop.image)
                     
             </div>
                   
