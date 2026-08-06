@@ -162,22 +162,22 @@ const handleAddToCart = (event) => {
 
         {/* Image gallery */}
         <div className="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8">
-          <div className="aspect-h-4 aspect-w-3 hidden overflow-hidden rounded-lg lg:block">
+          <div className="aspect-h-4 aspect-w-3 hidden overflow-hidden rounded-lg lg:block ">
             <img
               src={`${import.meta.env.BASE_URL}${product.data.images[0]}`}
               
-              className="h-full w-full object-cover object-center"
+              className="h-full w-full object-cover object-center hover-zoom"
             />
           </div>
           <div className="hidden lg:grid lg:grid-cols-1 lg:gap-y-8">
-            <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
+            <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg hover-zoom">
               <img
                 src={`${import.meta.env.BASE_URL}${product.data.images[1]}`}
                 
                 className="h-full w-full object-cover object-center"
               />
             </div>
-            <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
+            <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg hover-zoom">
               <img
                 src={`${import.meta.env.BASE_URL}${product.data.images[2]}`}
                 
@@ -185,7 +185,7 @@ const handleAddToCart = (event) => {
               />
             </div>
           </div>
-          <div className="aspect-h-5 aspect-w-4 lg:aspect-h-4 lg:aspect-w-3 sm:overflow-hidden sm:rounded-lg">
+          <div className="aspect-h-5 aspect-w-4 lg:aspect-h-4 lg:aspect-w-3 sm:overflow-hidden sm:rounded-lg hover-zoom" >
             <img
               src={`${import.meta.env.BASE_URL}${product.data.images[3]}`}
               
@@ -240,10 +240,10 @@ const handleAddToCart = (event) => {
               {/* Sizes */}
               <div className="mt-10">
                 <div className="flex items-center justify-between">
-                  <h3 className="text-sm font-medium text-gray-900">Size</h3>
+                  <h3 className="text-sm font-medium text-gray-900"></h3>
                   <div  className="text-sm font-medium text-indigo-600 hover:text-indigo-500"
                   >
-                    Size guide
+                  
                   </div>
                 </div>
 
@@ -347,28 +347,27 @@ const handleAddToCart = (event) => {
             {product.data.relatedProducts?.map((callout) => (
               <div key={callout.id} className="group relative">
                 
-                <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-2 group-hover:opacity-75 sm:h-64">
+                <div className=" hover-card relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-2  sm:h-64">
                   <img
                     src={`${import.meta.env.BASE_URL}${callout.image}`}
                     
-                    className="h-full w-full object-cover object-center"
+                    className="h-full w-full object-cover object-center "
                   />
+                      <Link to='/products'  onClick={() => context.setId(callout.id)} >
+                
+              
                   <span className="absolute inset-0" />
-                    {callout.name}
+                    {callout.name}</Link>
                 </div>
                 <h3 className="mt-6 text-sm text-gray-500">
                  
-                   
+                
                   
                 </h3>
                 <p className="text-base font-semibold text-gray-900">{callout.name}</p>
                 
                 
-                <Link to='/products'  onClick={() => context.setId(callout.id)
-                }
-              >
-                ver producto
-              </Link>
+               
               </div>
             ))}
           </div>

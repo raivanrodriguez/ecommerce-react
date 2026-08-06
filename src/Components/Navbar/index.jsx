@@ -46,7 +46,7 @@ const Navbar = () => {
 			</ul>
 			<ul className="flex items-center gap-3">
 				<li>
-					sfdaafsasfaf@mail.com
+					MyMail@mail.com
 				</li>
 				{
 					sideMenu.map((item, index) => {
