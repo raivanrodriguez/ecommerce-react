@@ -131,7 +131,7 @@ export default function Cart() {
 
                         <img
 
-                            src={product.images[0]}
+                            src={`${import.meta.env.BASE_URL}${product.images[0]}`}
 
                             className="w-32 h-32 object-cover rounded-lg"
 

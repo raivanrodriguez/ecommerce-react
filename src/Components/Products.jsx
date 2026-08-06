@@ -164,7 +164,7 @@ const handleAddToCart = (event) => {
         <div className="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8">
           <div className="aspect-h-4 aspect-w-3 hidden overflow-hidden rounded-lg lg:block">
             <img
-              src={product.data.images[0]}
+              src={`${import.meta.env.BASE_URL}${product.data.images[0]}`}
               
               className="h-full w-full object-cover object-center"
             />
@@ -172,14 +172,14 @@ const handleAddToCart = (event) => {
           <div className="hidden lg:grid lg:grid-cols-1 lg:gap-y-8">
             <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
               <img
-                src={product.data.images[1]}
+                src={`${import.meta.env.BASE_URL}${product.data.images[1]}`}
                 
                 className="h-full w-full object-cover object-center"
               />
             </div>
             <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
               <img
-                src={product.data.images[2]}
+                src={`${import.meta.env.BASE_URL}${product.data.images[2]}`}
                 
                 className="h-full w-full object-cover object-center"
               />
@@ -187,7 +187,7 @@ const handleAddToCart = (event) => {
           </div>
           <div className="aspect-h-5 aspect-w-4 lg:aspect-h-4 lg:aspect-w-3 sm:overflow-hidden sm:rounded-lg">
             <img
-              src={product.data.images[3]}
+              src={`${import.meta.env.BASE_URL}${product.data.images[3]}`}
               
               className="h-full w-full object-cover object-center"
             />
@@ -349,7 +349,7 @@ const handleAddToCart = (event) => {
                 
                 <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-2 group-hover:opacity-75 sm:h-64">
                   <img
-                    src={callout.image}
+                    src={`${import.meta.env.BASE_URL}${callout.image}`}
                     
                     className="h-full w-full object-cover object-center"
                   />
