@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 // eslint-disable-next-line react/prop-types
 const Navbaritem = ({ children, ...props }) => {
 
-	const activeStyle = 'underline underline-offset-4';
+	const activeStyle = ' underline-offset-4 navbar-link';
 
 	return( 
 		<NavLink 
